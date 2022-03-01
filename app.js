@@ -1,21 +1,18 @@
 let playerScore = 0
 let computerScore = 0
-let winner = ''
 
 function playRound(playerSelection, computerSelection) {
     if (
         (playerSelection === "rock" && computerSelection === "scissors") ||
         (playerSelection === "paper" && computerSelection === "rock") ||
         (playerSelection === "scissors" && computerSelection === "paper")) {
-        playerScore++
-        winner = 'player'    
+        playerScore++  
     } else if (
         (playerSelection === "rock" && computerSelection === "paper") ||
         (playerSelection === "paper" && computerSelection === "scissors") ||
         (playerSelection === "scissors" && computerSelection === "rock")) {
         computerScore++
-        winner = 'computer'
-    } else if (playerSelection === computerSelection) { winner = 'tie' }
+    }
 }
 
 function computerPlay() {
@@ -45,7 +42,6 @@ scissorsButton.addEventListener('click', () => clickImage('scissors'))
 resetButton.addEventListener('click', restartGame)
 
 function clickImage(playerSelection) {
-    // body.style.backgroundColor = "white";
     if (gameOver()) {
         return
     }
