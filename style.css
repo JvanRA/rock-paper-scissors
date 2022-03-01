@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+    font-family: 'Jura', sans-serif;
+    background-color: #1a1e29;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 72px;
+    text-align: center;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+img {
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.versus {
+    border: 2px solid red;
+    height: 400px;
+}
+
+.card {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.versus img {
+    height: 300px;
+    width: 300px;
+}
+
+.threeChoices {
+    height: 300px;
+    border: 2px solid red;
+}
+
+.threeChoices img {
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.threeChoices img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.reset {
+    border: 2px solid red;
+    height: 200px;  
+}
+
+.reset .container {
+    justify-content: space-around;
+}
+
+#resetButton {
+    font-family: 'Jura', sans-serif;
+    font-size: 48px;
+    border: none;
+    border-radius: 12px;
+    height: 75px;
+    width: 225px;
+    cursor: pointer;
+}
+
+#gameResult {
+    display: none;
+}
